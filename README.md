@@ -17,7 +17,7 @@ This project is a **restaurant website assignment** created using HTML and CSS.
 ## 🛠️ Technologies Used
 - HTML5
 - CSS
-- jss
+- js
 
 ## 🌐 Live Website
 https://iamrupesh1.github.io/restaurant-landing-page/
