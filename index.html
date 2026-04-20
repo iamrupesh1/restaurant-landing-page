@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Images/logo-white.png" alt="LeadGen" class="logo-img">
+            </div>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#chefs" class="nav-link">Chefs</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-book">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-dots">
+            <span class="hero-dot active" data-index="0"></span>
+            <span class="hero-dot" data-index="1"></span>
+            <span class="hero-dot" data-index="2"></span>
+        </div>
+        <div class="hero-box">
+            <div class="hero-box-inner">
+                <h1>DELICIOUS<br>BREAKFAST</h1>
+                <p>Lorem Ipsum is simply dummy text of printing and industry. Lorem Ipsum the industry's dummy text.</p>
+                <button class="btn btn-hero" onclick="scrollToSection('menu')">DISCOVER MENU</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container about-container">
+            <div class="about-collage">
+                <img class="collage-img collage-1" src="Images/Image-1.jpg" alt="Food">
+                <img class="collage-img collage-2" src="Images/Image-2.jpg" alt="Food">
+                <img class="collage-img collage-3" src="Images/Image-3.jpg" alt="Food">
+            </div>
+            <div class="about-text">
+                <h2>The best food in town at one of the best locations!!!</h2>
+                <p class="about-lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries.</p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type scrambled.</p>
+                <button class="btn btn-outline-gold">EXPLORE MENU →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="service-grid" id="serviceGrid">
+                <!-- Services will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Promo Banner -->
+    <section class="menu-promo">
+        <div class="menu-promo-left">
+            <div class="chef-hat-icon">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 34 C8 34 4 30 4 24 C4 18 8 14 14 14 C15 10 19 7 24 7 C27 7 30 8.5 32 11 C33 10.5 34.5 10 36 10 C41 10 45 14 45 19 C48 20 50 23 50 26 C50 30 47 34 42 34 Z" stroke="#c98a20" stroke-width="1.5" fill="none"/>
+                    <rect x="14" y="34" width="28" height="4" rx="1" stroke="#c98a20" stroke-width="1.5" fill="none"/>
+                    <rect x="14" y="40" width="28" height="4" rx="1" stroke="#c98a20" stroke-width="1.5" fill="none"/>
+                    <line x1="22" y1="34" x2="22" y2="44" stroke="#c98a20" stroke-width="1.5"/>
+                    <line x1="30" y1="34" x2="30" y2="44" stroke="#c98a20" stroke-width="1.5"/>
+                </svg>
+            </div>
+            <p class="promo-tagline">Specialty of the Restaurant</p>
+            <h2>DISCOVER OUR<br>TASTY MEALS</h2>
+            <p class="promo-desc">Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+            <button class="btn-outline-gold" onclick="scrollToSection('contact')">BOOK A TABLE →</button>
+        </div>
+        <div class="menu-promo-right">
+            <img src="Images/image-4.jpg" alt="Tasty Meal">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+        <div class="container">
+            <h2 class="section-title">MAIN MENU</h2>
+            <p class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            
+            <div class="menu-tabs" id="menuTabs">
+                <!-- Menu tabs will be dynamically loaded -->
+            </div>
+
+            <div class="menu-list" id="menuList">
+                <!-- Menu items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <h2 class="section-title">FOOD GALLERY</h2>
+            <p class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Gallery -->
+    <div class="modal" id="galleryModal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Gallery Image">
+    </div>
+
+    <!-- Food Photo Mosaic Strip -->
+    <div class="food-mosaic">
+        <div class="mosaic-item"><img src="Images/aa.jpg" alt="food"></div>
+        <div class="mosaic-item"><img src="Images/bb.jpg" alt="food"></div>
+        <div class="mosaic-item mosaic-tall"><img src="Images/cc.jpg" alt="food"></div>
+        <div class="mosaic-item"><img src="Images/dd.jpg" alt="food"></div>
+        <div class="mosaic-item"><img src="Images/ee.jpg" alt="food"></div>
+        <div class="mosaic-item"><img src="Images/2.jpg" alt="food"></div>
+    </div>
+
+    <!-- Chefs Section -->
+    <section id="chefs" class="chefs section">
+        <div class="container">
+            <h2 class="section-title">MEET OUR CHEF</h2>
+            <p class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        </div>
+
+        <!-- Chef slider card -->
+        <div class="chef-slider" id="chefSlider">
+            <!-- cards rendered by JS -->
+        </div>
+        <div class="chef-dots" id="chefDots"></div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Amazing restaurant come and<br>experience inspired cooking!</h2>
+            <button class="btn btn-light" onclick="scrollToSection('contact')">BOOK A TABLE</button>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog section">
+        <div class="container">
+            <h2 class="section-title">OUR BLOG</h2>
+            <p class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+            <div class="blog-grid" id="blogGrid"></div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="testimonial-inner">
+            <!-- left dark food photo -->
+            <div class="testimonial-photo testimonial-photo-left">
+                <img src="Images/aa.jpg" alt="food">
+            </div>
+            <!-- center cream panel -->
+            <div class="testimonial-content">
+                <h2>Enjoyed the<br>meal &amp; friendly<br>service!</h2>
+                <p class="testimonial-sub">We offer a wide variety of trainings to achieve the best results.</p>
+                <p class="testimonial-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                <button class="btn-outline-gold" onclick="scrollToSection('contact')">BOOK A TABLE</button>
+            </div>
+            <!-- right dark food photo -->
+            <div class="testimonial-photo testimonial-photo-right">
+                <img src="Images/dd.jpg" alt="food">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+
+        <!-- Info banner — 4 centered columns -->
+        <div class="contact-banner">
+            <div class="container">
+                <div class="contact-banner-grid">
+                    <div class="contact-banner-item">
+                        <div class="contact-banner-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        </div>
+                        <div>
+                            <h4>Contact Address</h4>
+                            <p>301 The Greenhouse, Custard,<br>Factory, London, E2 8DY.</p>
+                        </div>
+                    </div>
+                    <div class="contact-banner-item">
+                        <div class="contact-banner-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+                        </div>
+                        <div>
+                            <h4>Call Us Today!</h4>
+                            <p>(M) +44 (0) 123 456 7890<br>(O) +44 (0) 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-banner-item">
+                        <div class="contact-banner-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>no-reply@domain.com<br>help@domain.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-banner-item">
+                        <div class="contact-banner-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                        </div>
+                        <div>
+                            <h4>Opening Hour</h4>
+                            <p>Mon to Sat – 9 AM to 11 PM<br>Sunday 8 AM to 12 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Book a Table — dark food bg, centered form -->
+        <div class="contact-form-section">
+            <div class="contact-form-overlay">
+                <h2>BOOK A TABLE</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                <form id="bookingForm" class="booking-form">
+                    <input type="text"  name="name"    placeholder="*Your Name"  required>
+                    <input type="email" name="email"   placeholder="*Your Email" required>
+                    <textarea           name="message" placeholder="Your Message" rows="4"></textarea>
+                    <button type="submit" class="btn-book">BOOK TABLE</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="Images/logo-white.png" alt="LeadGen" style="filter:invert(1) brightness(0.3); height:36px;">
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Legal</a>
+            </div>
+            <p>© 2016 LeadGen is proudly powered by ThemeZaa.</p>
+            <div class="footer-social">
+                <a href="#">f</a>
+                <a href="#">t</a>
+                <a href="#">g+</a>
+                <a href="#">in</a>
+                <a href="#">yt</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
